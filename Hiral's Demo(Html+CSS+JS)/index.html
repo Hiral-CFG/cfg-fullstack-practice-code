@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Dev Interactive Demo</title>
+
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="main-heading">Web Development Demo</h1>
+
+    <div class="container">
+        <h2>HTML Elements</h2>
+        <p class="text">This is a paragraph.</p>
+        <p class="text">This is another paragraph.</p>
+
+        <!-- Image example -->
+        <img src="https://picsum.photos/200/300" alt="Sample Image">
+    </div>
+
+    <div class="container">
+        <h2>DOM Manipulation</h2>
+
+        <!-- Inline events -->
+        <button onclick="addElement()">Add Element</button>
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="removeElement()">Remove Element</button>
+
+        <div id="dom-output" class="output"></div>
+    </div>
+
+    <div class="container">
+        <h2>Styling with JavaScript</h2>
+
+        <button onclick="changeStyle()">Change Background</button>
+
+        <p id="style-text" style="color: navy; font-size: 30px;">
+            Watch my style change!
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Event Listener Example</h2>
+
+        <button id="eventBtn">Click Me</button>
+
+        <p id="event-output"></p>
+    </div>
+
+    <!-- LINK JS FILE (IMPORTANT: at bottom) -->
+    <script src="index.js"></script>
+
+</body>
+</html>
